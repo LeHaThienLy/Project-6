@@ -1,0 +1,32 @@
+@import'./fonts';
+@import'./color';
+
+//fonts
+$primary-font:$roboto-font;
+
+
+//colors
+$primary-color : $blue-color-primary;
+$second-color:$blue-color-second;
+$light-grey: #cccccc;
+$gray-color:#999999;
+$black-color: #000;
+$white-color:#fff;
+$border-bottom-color:#e7e7e7;
+$red-color:red;
+$darkblue-color:rgb(2, 2, 26);
+$bg-color-footer:#222;
+//media
+$tablet-size: "screen and (max-width:800px)";
+$mobile-size:"screen and (max-width:500px)";
+
+@mixin tablet{
+  @media #{$tablet-size} {
+    @content;
+  }
+}
+@mixin mobile{
+  @media #{$mobile-size} {
+    @content;
+  }
+}

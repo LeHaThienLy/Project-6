@@ -1,0 +1,151 @@
+@import'../config/variable';
+
+
+.header-slider {
+    &__item {
+        position: relative;
+
+        &--bg {
+            background-image: url('../images/slider-bg.png');
+            width: 100% !important;
+            height: 80vh !important;
+            background-size: cover;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        left: 20%;
+
+        &--white {
+            color: $white-color;
+        }
+    }
+
+    &__des {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+
+    &__title {
+        font-weight: 700 !important;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
+.header-slider {
+    .slick-dots {
+        bottom: 180px;
+        right: 15px;
+        width: 20px;
+        li {
+            button {
+                &:before {
+                    font-size: 15px;
+                    color:$white-color;
+                }
+            }
+
+            &.slick-active button:before {
+                color: $white-color;
+
+            }
+        }
+    }
+}
+
+.search-form {
+    background-color: $white-color;
+    border-radius: 5px;
+    padding: 15px 0;
+
+    &__name,
+    &__option {
+        background: #eee;
+        border-radius: 2px;
+        border: none;
+        padding: 10px 5px;
+        margin-right: 15px;
+        color: $black-color;
+        font-style: italic;
+        font-weight: 400;
+        width: 25%;
+    }
+    .locate{
+        width: 50px !important;
+    }
+}
+@include tablet{
+    .header-slider {
+        &__item {
+            position: relative;
+
+            &--bg {
+                height: 50vh !important;
+            }
+        }
+
+        &__content {
+            
+            right: 10%;
+            left: 10%;
+        }
+
+        &__des {
+            margin: 25px 0;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .search-form {
+        padding: 15px 10px;
+        &__name,
+        &__option{
+            width: 25%;
+        }
+        .site-button{
+            padding: 5px 10px !important;
+        }
+    
+    
+    }
+}
+@include mobile{
+   
+    .header-slider {
+        &__item {
+           
+            &--bg {
+                height: 400px !important;
+                }
+            }
+        &__content {
+            top: 10%;
+            right: 10%;
+            left: 10%;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .search-form {
+        &__name,
+        &__option, & .site-button {
+            display: block;
+            padding: 10px 5px;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+    
+    }
+}

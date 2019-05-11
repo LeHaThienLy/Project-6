@@ -1,0 +1,94 @@
+@import'../config/variable';
+.footer {
+    background: $bg-color-footer;
+    color: $white-color;
+
+    &__content {
+        padding: 80px 0;
+    }
+}
+
+.footer-item {
+    text-align: left;
+
+    &__logo {
+        margin-bottom: 25px;
+    }
+
+    &__content {
+        line-height: 30px;
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 40px;
+
+    }
+}
+
+.twitter-update {
+    &__time {
+        text-transform: uppercase;
+
+        &--bold {
+            font-weight: bold;
+
+        }
+    }
+
+    &__content {
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+.useful-link {
+    padding: 0;
+    list-style: none;
+
+    &__item {
+
+        color: $gray-color;
+        line-height: 35px;
+
+        &:hover {
+            color: primary-color;
+            text-decoration: none;
+
+        }
+    }
+}
+
+.coppy-right {
+    background: #131313;
+    padding: 30px 0;
+
+    &__item {
+        display: inline;
+        padding-right: 35px;
+
+        &--border {
+            border-right: 2px solid $white-color;
+        }
+
+        &--blue {
+            color: $primary-color ;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+@include mobile{
+    .footer-item{
+        margin-bottom: 20px;
+    }
+    .footer-item__title {
+        margin-bottom: 10px;
+    }
+}

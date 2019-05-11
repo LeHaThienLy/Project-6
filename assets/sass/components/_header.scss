@@ -1,0 +1,44 @@
+@import'../config/variable';
+.header {
+    border-bottom: 1px solid $border-bottom-color;
+
+    &__content {
+        padding: 15px 0;
+        color: $gray-color;
+        
+    }
+
+    &__contact {
+        font-weight: 300;
+
+        div {
+            display: inline-block;
+            margin-right: 20px;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+    }
+}
+.header-social {
+    text-align: right;
+    &__items {
+        color: $gray-color;
+        margin: 5px;
+        &:hover {
+            text-decoration: none;
+            color: $primary-color;
+        }
+       
+    }
+}
+
+
+@include mobile{
+    .header-social{
+        text-align: left;
+        margin: 5px 0;
+    }
+}

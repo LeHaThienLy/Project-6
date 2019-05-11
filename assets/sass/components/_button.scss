@@ -1,0 +1,26 @@
+@import'../config/variable';
+.site-button{
+   display: inline-block;
+    cursor: pointer;
+    &--blue{
+        background-color: $primary-color;
+    }
+
+    &--hover{
+        &:hover{
+            background-color: $second-color;
+            text-decoration: none;
+            color: $white-color;
+        }
+        
+    }
+
+    &--white-color{
+        color: $white-color;
+        
+    }
+    &--borderless{
+        border:none;
+        border-radius: 5px;
+    }
+}

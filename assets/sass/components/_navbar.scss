@@ -1,0 +1,70 @@
+@import'../config/variable';
+
+.navbar {
+    position: relative;
+    padding: 10px 0;
+
+}
+
+.navbar-right {
+    position: absolute;
+    right: 0;
+}
+
+.nav-active:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 4px solid $primary-color;
+}
+
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+
+    &.nav-active:after {
+        bottom: -48%;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: $black-color;
+    }
+}
+
+.nav-item-btn {
+    background-color: $light-grey;
+    border-radius: 5px;
+    padding: 7px 25px;
+    margin: 0 8px;
+
+    &:hover {
+        background-color:$primary-color;
+        cursor: pointer;
+    }
+
+    a {
+        color: $white-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@include tablet {
+    .navbar-right {
+        position: relative;
+    }
+
+    .nav-active:after {
+        content: "";
+        border: none;
+    }
+}
+@include mobile{
+    .nav-item-btn{
+        margin-bottom: 8px;
+        width: 35%;
+    }
+}

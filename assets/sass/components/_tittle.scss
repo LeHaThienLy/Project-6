@@ -1,0 +1,30 @@
+.site-title {
+    padding: 60px 0 50px 0;
+
+    &--center {
+        text-align: center;
+    }
+
+    &__name {
+        font-weight: 300;
+        margin: 0;
+        font-size: 20px;
+
+    }
+
+    &__sub {
+        font-size: 35px;
+        margin-bottom: 30px;
+        &--bold {
+            font-weight: 700;
+        }
+    }
+
+    &__des {
+        line-height: 35px;
+        font-size: 15px;
+        color: grey;
+        margin: 0 12%;
+    }
+
+}
